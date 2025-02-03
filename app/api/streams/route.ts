@@ -3,7 +3,9 @@ import db from "@/lib/db";
 import { YT_REGEX } from "@/lib/utils";
 import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
-import * as youtubesearchapi from "youtube-search-api";
+import youtubesearchapi from "youtube-search-api";
+
+
 import { z } from "zod";
 
 const CreateStreamSchema = z.object({
